@@ -13,7 +13,7 @@ dp = Dispatcher(bot=bot, storage=MemoryStorage())
 @dp.message_handler(commands=['start'])
 @dp.message_handler()
 async def start(message: types.Message):
-    count = sum(1 for msg in message.text if msg in ['a', 'o', 'u', 'i', 'e'])
+    count = sum(1 for msg in message.text if msg in ['a', 'o', 'u', 'i', 'e', 'A', 'O', 'U', 'I', 'E'])
     if count >= 5:
         await bot.delete_message(message.chat.id, message.message_id)
 
