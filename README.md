@@ -1,1 +1,1 @@
-docker run --name exam_con -e TOKEN=(your token) -it nourimanov/exam5:latest
+docker run --name exam_con -e TOKEN=(.....) -it nourimanov/exam5:latest
