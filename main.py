@@ -1,9 +1,11 @@
 import logging
+import os
+
 from aiogram import Bot, Dispatcher, types, executor
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 logging.basicConfig(level=logging.INFO)
-TOKEN = "5601282041:AAG2pU-4iPyiq3168do8JXI1ALkiXW8skX8"
+TOKEN = os.getenv('TOKEN')
 bot = Bot(TOKEN)
 dp = Dispatcher(bot=bot, storage=MemoryStorage())
 
